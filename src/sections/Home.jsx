@@ -2,20 +2,19 @@ function Home() {
     return (
         <section id="home" className="hero">
             <div className="hero-content">
-            <p className="hero-label"><b>Hello, I am a Quality Assurance Engineer</b></p>
-            
-            
-            <h3><b>
-                Ensuring software quality through structured testing.
-           </b></h3>
+            {/* <p className="hero-label">
+                <b>Hello, I am Indri. A Quality Assurance Engineer.</b>
+            </p> */}
 
-           <p className="hero-description">
-           I work closely with development teams to identify bugs, validate solutions, and improve software quality.
-           </p>
+            <h2> Delivering Clarity Through Software Testing and Documentation. </h2>
+
+            <p className="hero-description">
+                Hello, I am Indri. A quality assurance engineer who collaborates with stakeholders and development teams to communicate testing insights, supports informed decisions, and produces clear, comprehensive testing reports and documentation.
+            </p>
 
            <p className="hero-secondary">
-            Manual QA | API Testing | Behavior-Driven Development (BDD) | Fintech & Gaming Backend
-           </p>
+            <b>Manual QA | API Testing | Behavior-Driven Development (BDD) | Fintech & Gaming Backend
+           </b></p>
 
            <p className="hero-actions">
             <a href="#projects" className="button-primary">

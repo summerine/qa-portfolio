@@ -2,10 +2,9 @@ function About(){
     return (
         <section id="about" className="about">
             <div className="about-content">
-                <p className="section-label">GET TO KNOW ME</p>
+                <p className="section-label">About</p>
             
             <h2>About Me</h2>
-
             <p>
                 I am a Quality Assurance Engineer with 4.5 years
                 of working experience across fintech/open finance, and gaming backend platforms.

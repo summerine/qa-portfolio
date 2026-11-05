@@ -1,16 +1,20 @@
-function Navbar() {
-    return (
-    <nav>
-         <h1>My Portfolio</h1>
 
-        <ul className="nav-list">
-            <li>About</li>
-            <li>Experience</li>
-            <li>Projects</li>
-            <li>Contact</li>
-        </ul>
-    </nav>    
-    )
+function Navbar() {
+  return (
+    <nav className="navbar">
+      <a href="#home" className="navbar-logo">
+       INDRI
+      </a>
+
+      <ul className="nav-list">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#experience">EXPERIENCE</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  )
 }
 
 export default Navbar
