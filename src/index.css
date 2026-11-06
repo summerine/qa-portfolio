@@ -1,54 +1,51 @@
 
+/* =================================
+   1. DESIGN TOKENS
+================================= */
+
 :root {
-  font-family: 'Inter', sans-serif;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
+  /* Backgrounds */
+  --background: #0A0A0C;
+  --surface: #121215;
+  --surface-hover: #333538;
 
-  --background: #121114;
-  --surface: #211D1E;
-  --surface-hover: #302629;
+  /* Primary accents */
+  --accent: #9E0B0F;
+  --accent-light: #D1191E;
 
-  --accent: #8E263F;
-  --accent-light: #C45A68;
+  /* Secondary accents */
+  --accent-warm: #D9481E;
+  --accent-amber: #E69B2E;
+  --accent-gold: #D4AF37;
+  --accent-indigo: #243B6B;
+  --accent-purple: #7B5AA6;
+  --accent-green: #2A4D3E;
+  --accent-plum: #6E2B5B;
 
-  --text-primary: #EAE2D8;
-  --text-secondary: #AAA29B;
+  /* Text */
+  --text-primary: #C4C7CC;
+  --text-secondary: #9BA3AB;
 
-  --border: #393133;
+  /* Borders */
+  --border: #4E525B;
+
+  /* Typography */
+  --font-body: 'Inter', sans-serif;
 }
 
-* {
-  font-family: 'Inter', sans-serif;
- }
+/* =================================
+   2. RESET
+================================= */
 
-/* Headings */
-h1,
-h2,
-h3 {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 500;
-
-}
-/* Navigation */
-.navbar-logo,
-.nav-list a {
-  font-family: 'Inter', sans-serif;
-}
-
-
-/* 2. Basic reset */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* 3. Website background and default text */
 html {
   scroll-behavior: smooth;
 }
-
-
 
 body {
   min-width: 320px;
@@ -57,46 +54,53 @@ body {
   background:
     radial-gradient(
       ellipse at 15% 15%,
-      rgba(142, 38, 63, 0.14),
+      rgba(158, 11, 15, 0.12),
       transparent 45%
-    ),
-    radial-gradient(
-      ellipse at 85% 35%,
-      rgba(196, 90, 104, 0.08),
-      transparent 50%
     ),
     var(--background);
 
   color: var(--text-primary);
-  line-height: 1.7;
+  font-family: var(--font-body);
   font-size: 16px;
-
+  line-height: 1.7;
+  font-weight: 400;
 }
 
+/* =================================
+   3. MAIN CONTAINER
+================================= */
 
-
-/* 4. Main React container */
 #root {
-  min-height: 100vh;
   width: 100%;
+  min-height: 100vh;
 }
 
-/* 5. Heading typography */
+/* =================================
+   4. TYPOGRAPHY
+================================= */
+
 h1,
 h2,
 h3 {
-  font-family: Georgia, 'Times New Roman', serif;
-  font-weight: 400;
+  font-family: var(--font-heading);
+  font-weight: 500;
   line-height: 1.2;
+  color: var(--text-primary);
 }
 
-/* 6. Links */
+p {
+  color: var(--text-secondary);
+}
+
 a {
   color: inherit;
   text-decoration: none;
 }
 
-/* 7. Text selection */
+/* =================================
+   5. TEXT SELECTION
+================================= */
+
 ::selection {
   background: var(--accent);
   color: #FFFFFF;
