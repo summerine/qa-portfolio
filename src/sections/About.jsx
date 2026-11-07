@@ -7,7 +7,7 @@ function About(){
             <h2>About Me</h2>
             <p>
                 I am a Quality Assurance Professional with 4.5 years
-                of working experience across fintech/open finance, and gaming backend products.
+                of working experience across fintech (open finance), and gaming backend products.
             </p>
 
             <p>
@@ -18,7 +18,7 @@ function About(){
             </p>
 
             <p>
-                I am currently expanding my technical skills in test automation using Playwright with Pytest/Python,
+                I am currently expanding my technical skills in test automation using Playwright with Python and Pytest
                 while continuing to strengthen my foundation in software testing.
             </p>
             

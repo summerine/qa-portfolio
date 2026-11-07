@@ -5,14 +5,15 @@ const skillCategories = [
     title: "Testing Types",
     accent: "red",
     skills: [
-      "Exploratory Testing",
-      "Regression Testing",
-      "Smoke Testing",
-      "Sanity Testing",
-      "End-to-End Testing",
-      "Retesting",
-      "User Acceptance Testing (UAT)",
       "API Testing",
+      "End-to-End Testing",
+      "Exploratory Testing",     
+       "Manual QA",
+      "Regression Testing",
+      "Retesting",
+      "Sanity Testing",
+      "Smoke Testing",
+      "User Acceptance Testing (UAT)",
     ],
   },
   {
@@ -24,7 +25,6 @@ const skillCategories = [
       "Swagger",
       "JIRA",
       "Confluence",
-      "GitHub Actions",
       "Slack",
       "Google Sheets",
       "Google Docs",
@@ -60,9 +60,7 @@ const skillCategories = [
     title: "AI Tools",
     accent: "purple",
     skills: [
-      "Claude AI",
-      "Test Case Drafting",
-      "Edge Case Analysis",
+      "Claude AI (Test Case Drafting and Edge Case Analysis)",
     ],
   },
   {
@@ -70,8 +68,17 @@ const skillCategories = [
     title: "Domain Knowledge",
     accent: "plum",
     skills: [
-      "Fintech/Open Banking",
+      "Fintech (Open Finance)",
       "Gaming Backend Services",
+    ],
+  },
+    {
+    number: "07",
+    title: "Platform Experience",
+    accent: "overcast-blue",
+    skills: [
+      "Web Applications",
+      "Mobile Applications",
     ],
   },
 ];
@@ -121,13 +128,13 @@ function Skills() {
 
         <article className="learning-dossier">
           <p className="learning-label">
-            CURRENTLY DEVELOPING / 07
+            CURRENTLY DEVELOPING
           </p>
 
           <h3>Test Automation</h3>
 
           <div className="skill-list">
-            {["Playwright", "Python", "Pytest"].map((skill) => (
+            {["Playwright", "Python", "Pytest", "Github Actions"].map((skill) => (
               <span className="skill-item" key={skill}>
                 {skill}
               </span>

@@ -204,7 +204,7 @@
 
 .about-content {
   width: 100%;
-  max-width: 760px;
+  max-width: 600px;
 }
 
 .about h2 {
@@ -486,6 +486,10 @@
   --category-accent: #6E2B5B;
 }
 
+.dossier-overcast-blue {
+  --category-accent: #3B4D61;
+}
+
 /* Currently developing */
 .learning-dossier {
   margin-top: 40px;
@@ -514,6 +518,10 @@
   margin-top: 18px;
   max-width: 700px;
   font-size: 14px;
+}
+
+.skills-section {
+  border-bottom: 1px solid var(--border);
 }
 
 /* Responsive layout */

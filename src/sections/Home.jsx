@@ -14,7 +14,7 @@ function Home() {
             </p>
 
            <p className="hero-secondary">
-            <strong>MANUAL TESTING · API TESTING · BDD · FINTECH/OPEN FINANCE · GAMING BACKEND
+            <strong>MANUAL TESTING · API TESTING · BDD · FINTECH (OPEN FINANCE) · GAMING BACKEND SERVICES
            </strong></p>
 
            <p className="hero-actions">
