@@ -24,10 +24,10 @@ const skillCategories = [
       "Swagger",
       "JIRA",
       "Confluence",
-      "Slack",
+      "Chrome DevTools",
       "Google Sheets",
       "Google Docs",
-      "Chrome DevTools",
+      "Slack",
       "QMetry"
     ],
   },
@@ -36,11 +36,11 @@ const skillCategories = [
     title: "Methodologies",
     accent: "green",
     skills: [
-      "Behavior-Driven Development (BDD)",
-      "Software Development Life Cycle (SDLC)",
-      "Software Testing Life Cycle (STLC)",
       "Agile",
       "Scrum",
+      "Behavior-Driven Development (BDD)",
+      "Software Testing Life Cycle (STLC)",
+      "Software Development Life Cycle (SDLC)",
     ],
   },
   {
@@ -48,11 +48,11 @@ const skillCategories = [
     title: "Documentation",
     accent: "amber",
     skills: [
-      "Test Plans",
       "Test Cases",
+      "Test Plans",
       "Test Reports",
-      "User Manuals",
       "Test Reporting Guidelines",
+      "User Manuals",
     ],
   },
   {

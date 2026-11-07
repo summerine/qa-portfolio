@@ -32,7 +32,7 @@ function Experience() {
           <div className="experience-timeline">
 
             {/* Official role */}
-            <div className="timeline-item">
+            <div className="timeline-item role-official">
               <div className="timeline-marker">
                 <span className="timeline-dot timeline-dot-current" />
                 <span className="timeline-line" />
@@ -100,7 +100,7 @@ function Experience() {
             </div>
 
             {/* Additional responsibility */}
-            <div className="timeline-item">
+            <div className="timeline-item role-lead">
               <div className="timeline-marker">
                 <span className="timeline-dot" />
               </div>

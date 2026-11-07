@@ -13,7 +13,7 @@ function Home() {
 
         <p className="hero-description">
           I help teams understand product behaviour, communicate testing
-          findings clearly, and make informed decisions, going beyond
+          findings effectively, and make informed decisions, going beyond
           identifying defects.
         </p>
 
@@ -25,7 +25,7 @@ function Home() {
         </p>
 
         <div className="hero-actions">
-          <a href="#projects" className="button-primary">
+          <a href="#experience" className="button-primary">
             View Experience
           </a>
           <a href="#contact" className="button-secondary">
