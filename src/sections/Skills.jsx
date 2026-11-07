@@ -1,4 +1,3 @@
-
 const skillCategories = [
   {
     number: "01",
@@ -7,8 +6,8 @@ const skillCategories = [
     skills: [
       "API Testing",
       "End-to-End Testing",
-      "Exploratory Testing",     
-       "Manual QA",
+      "Exploratory Testing",
+      "Manual QA",
       "Regression Testing",
       "Retesting",
       "Sanity Testing",
@@ -29,6 +28,7 @@ const skillCategories = [
       "Google Sheets",
       "Google Docs",
       "Chrome DevTools",
+      "QMetry"
     ],
   },
   {
@@ -40,7 +40,7 @@ const skillCategories = [
       "Software Development Life Cycle (SDLC)",
       "Software Testing Life Cycle (STLC)",
       "Agile",
-      "Scrum"
+      "Scrum",
     ],
   },
   {
@@ -72,7 +72,7 @@ const skillCategories = [
       "Gaming Backend Services",
     ],
   },
-    {
+  {
     number: "07",
     title: "Platform Experience",
     accent: "overcast-blue",
@@ -82,6 +82,8 @@ const skillCategories = [
     ],
   },
 ];
+
+const learningSkills = ["Playwright", "Python", "Pytest", "GitHub Actions"];
 
 function Skills() {
   return (
@@ -93,7 +95,7 @@ function Skills() {
             SKILLS
           </p>
 
-          <h2>Skills & Expertise</h2>
+          <h2>Skills &amp; Expertise</h2>
 
           <p className="skills-intro">
             A record of technical capabilities, testing practices,
@@ -134,7 +136,7 @@ function Skills() {
           <h3>Test Automation</h3>
 
           <div className="skill-list">
-            {["Playwright", "Python", "Pytest", "Github Actions"].map((skill) => (
+            {learningSkills.map((skill) => (
               <span className="skill-item" key={skill}>
                 {skill}
               </span>
@@ -143,7 +145,7 @@ function Skills() {
 
           <p className="learning-description">
             Currently expanding my skills by learning test automation
-            using Playwright with Python and Pytest.
+            using Playwright with Python, Pytest and GitHub Actions.
           </p>
         </article>
 
