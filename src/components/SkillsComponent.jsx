@@ -85,7 +85,7 @@ const skillCategories = [
 
 const learningSkills = ["Playwright", "Python", "Pytest", "GitHub Actions"];
 
-function Skills() {
+function SkillsComponent() {
   return (
     <section id="skills" className="skills-section">
       <div className="skills-container">
