@@ -15,15 +15,16 @@ function About() {
         <p>
           My work covers the full testing cycle: understanding business
           requirements, designing test scenarios, executing test cases,
-          reporting bugs, and documenting results. I work closely with
-          project managers, developers and stakeholders to deliver
+          reporting bugs, writing test reports, and creating documentation such as user manuals and QA guidelines. 
+          I work closely with project managers, developers and stakeholders to deliver
           reliable software.
         </p>
 
         <p>
-          I also took on QA lead responsibilities during internal
+          During my tenure, I also took on QA lead responsibilities during internal
           playtesting and client launches, coordinating an eight-person
-          team and turning testing findings into clear reports.
+          team, mentoring and onboarding teammates, and turning testing findings into clear reports, 
+          and turning testing findings into clear reports.
         </p>
 
         <p>

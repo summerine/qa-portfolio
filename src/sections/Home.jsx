@@ -28,7 +28,10 @@ function Home() {
           <a href="#experience" className="button-primary">
             View Experience
           </a>
-          <a href="#contact" className="button-secondary">
+          <a href="#" className="button-secondary">
+            Download My CV
+          </a>
+          <a href="#contact" className="button-tertiary">
             Contact Me
           </a>
         </div>
