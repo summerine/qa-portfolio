@@ -1,6 +1,6 @@
 const companies = [
   {
-    name: "[Company Name]",
+    name: "Brankas Pte. Ltd.",
     description: "B2B Open Finance and Banking Solutions",
     period: "December 2025 – June 2026",
     details: ["7 months", "Contract", "Remote"],
@@ -37,7 +37,7 @@ const companies = [
     ],
   },
   {
-    name: "[Company Name]",
+    name: "PT. Accelbyte Teknologi Indonesia",
     description: "B2B Gaming Backend and Ecosystem Platform",
     period: "November 2021 – April 2025",
     details: ["3 years 6 months", "Full Time", "Remote"],
@@ -117,7 +117,7 @@ const companies = [
     ],
   },
    {
-    name: "[Company Name]",
+    name: "PT. Vodjo Teknologi Indonesia",
     description: "Software Ecosystem Company",
     period: "May 2021 – November 2021",
     details: ["7 months", "Contract", "Remote"],

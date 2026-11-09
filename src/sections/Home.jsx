@@ -2,9 +2,16 @@ function Home() {
   return (
     <section id="home" className="hero">
       <div className="hero-content">
-        <p className="hero-label">QUALITY ASSURANCE PROFESSIONAL</p>
+          <p className="hero-label">QUALITY ASSURANCE PROFESSIONAL</p>
 
+      <div className="hero-name-group">
         <h1 className="hero-name">Hello, I am Indri</h1>
+
+        <span className="open-to-work">
+          <span className="open-to-work-dot"></span>
+            OPEN TO WORK
+          </span>
+      </div>
 
         <h2>
           Delivering <span className="hero-highlight">Clarity</span> Through
@@ -35,6 +42,7 @@ function Home() {
             Contact Me
           </a>
         </div>
+
       </div>
     </section>
   );
