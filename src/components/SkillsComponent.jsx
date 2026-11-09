@@ -153,3 +153,5 @@ function Skills() {
     </section>
   );
 }
+
+export default SkillsComponent;
