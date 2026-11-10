@@ -1,6 +1,6 @@
 const companies = [
   {
-    name: "Brankas Pte. Ltd.",
+    name: "Brankas",
     description: "B2B Open Finance and Banking Solutions",
     period: "December 2025 – June 2026",
     tenure: "6 Months",
@@ -12,6 +12,10 @@ const companies = [
         title: "Quality Assurance Engineer",
         bullets: [
           <>
+          Primary contributor for a B2B open finance portal in a <strong>10-person project team</strong>, 
+          covering the full testing lifecycle.
+          </>,
+          <>
             Designed, reviewed and executed{" "}
             <strong>900+ manual test cases</strong> in BDD (Given-When-Then)
             format, covering core banking and approval workflows.
@@ -20,7 +24,7 @@ const companies = [
             Validated <strong>20+ REST API endpoints</strong> in Postman to
             verify user data flows and integration behaviour.
           </>,
-          "Performed exploratory, functional, end-to-end, regression and sanity testing across Staging and UAT environments.",
+          "Performed exploratory, end-to-end, regression and sanity testing across Staging and UAT environments.",
           "Triaged client-reported issues in Jira, verified fixes in Staging and UAT, and shared test results with developers and project stakeholders.",
           <>
             Used <strong>Claude AI</strong> to explore edge cases and speed up
@@ -57,16 +61,16 @@ const companies = [
           </>,
           <>
             Validated <strong>30+ REST API endpoints</strong> using Swagger
-            and performed exploratory, functional, smoke, sanity, regression,
+            and performed exploratory, smoke, sanity, regression,
             UAT, and end-to-end testing across web and client applications.
           </>,
-          "Supported releases by investigating failed test cases, verifying fixes, and collaborating with release teams and the QA Manager.",
+          "Supported releases by investigating failed test cases, verifying fixes, and collaborating with release teams, SDETs and the QA Manager.",
           <>
             Created and maintained{" "}
             <strong>15+ QA documents, test reports, and internal guidelines</strong>{" "}
             to support consistent testing practices and knowledge sharing.
           </>,
-          "Monitored CI/CD pipelines in GitLab and Jenkins, collaborating with SDETs to investigate failures and analyse test results.",
+          "Monitored CI/CD pipelines in GitLab, collaborating with SDETs to investigate failures and analyse test results.",
         ],
         achievements: [
           {
@@ -86,7 +90,6 @@ const companies = [
             playtesting and client launch periods in collaboration with the
             QA Manager.
           </>,
-          "Acted as the primary QA contact for the QA Manager, Project Managers, and clients, coordinating testing activities and communicating QA findings.",
           "Evaluated testing scope for unreleased games and collaborated with the QA Manager on release-readiness decisions.",
           "Supported team members with game build troubleshooting and coordinated build readiness with Project Managers and clients.",
         ],
@@ -138,7 +141,7 @@ const companies = [
           to ensure alignment with client expectations.
           </>,
           <>
-          Identified, reported and tracked defects, collaborating with developers to verify fixes and stabilise application builds.
+          Identified, reported and tracked bugs, collaborating with developers to verify fixes and stabilise application builds.
           </>,
           <>
           Conducted software demos, prepared design approval documents and user manuals for clients.

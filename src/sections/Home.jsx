@@ -5,7 +5,7 @@ function Home() {
           <p className="hero-label">QUALITY ASSURANCE PROFESSIONAL</p>
 
       <div className="hero-name-group">
-        <h1 className="hero-name">Hello, I am Indri</h1>
+        <h1 className="hero-name">Hello, I am Indri Puspita Rini</h1>
 
         <span className="open-to-work">
           <span className="open-to-work-dot"></span>
@@ -14,19 +14,18 @@ function Home() {
       </div>
 
         <h2>
-          Delivering <span className="hero-highlight">Clarity</span> Through
-          Software Testing and Documentation.
+          Making Product Behaviour <span className="hero-highlight">Clear</span> Through
+          Testing and Documentation.
         </h2>
 
         <p className="hero-description">
           I help teams understand product behaviour, communicate testing
-          findings effectively, and make informed decisions, going beyond
-          identifying defects.
+          findings effectively, and make informed decisions, not just find bugs.
         </p>
 
         <p className="hero-secondary">
           <strong>
-            MANUAL TESTING · API TESTING · BDD · FINTECH (OPEN FINANCE) ·
+            MANUAL TESTING · API TESTING · FINTECH (OPEN FINANCE) ·
             GAMING BACKEND SERVICES
           </strong>
         </p>
@@ -35,7 +34,7 @@ function Home() {
           <a href="#experience" className="button-primary">
             View Experience
           </a>
-          <a href="#" className="button-secondary">
+          <a href={`${import.meta.env.BASE_URL}QA-Engineer-Indri-Puspita-Rini.pdf`} className="button-secondary" download="QA-Engineer-Indri-Puspita-Rini.pdf">
             Download My CV
           </a>
           <a href="#contact" className="button-tertiary">

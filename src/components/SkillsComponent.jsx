@@ -9,7 +9,7 @@ const skillCategories = [
       "Exploratory Testing",
       "Manual QA",
       "Regression Testing",
-      "Retesting",
+      "Re-testing",
       "Sanity Testing",
       "Smoke Testing",
       "User Acceptance Testing (UAT)",
@@ -20,15 +20,15 @@ const skillCategories = [
     title: "Tools and Platforms",
     accent: "muted-rose",
     skills: [
-      "Fiddler",
-      "Postman",
-      "Swagger",
-      "JIRA",
       "Confluence",
       "Chrome DevTools",
       "Google Sheets",
       "Google Docs",
-      "QMetry"
+      "Fiddler",
+      "JIRA",
+      "Postman",
+      "QMetry",
+      "Swagger"
     ],
   },
   {
@@ -51,8 +51,8 @@ const skillCategories = [
       "Test Cases",
       "Test Plans",
       "Test Reports",
-      "Test Reporting Guidelines",
       "User Manuals",
+      "QA Guidelines"
     ],
   },
   {
@@ -77,22 +77,22 @@ const skillCategories = [
     title: "Platform Experience",
     accent: "antique-gold",
     skills: [
-      "Web Applications",
       "Mobile Applications",
+      "Web Applications",
     ],
   },
   {
     number: "08",
-    title: "Professional Strengths",
+    title: "Soft SKills",
     accent: "soft-lavender",
     skills: [
-      "Remote Collaboration",
+      "Adaptability",
       "Cross-team Collaboration",
       "Client Communication",
-      "Mentorship",
-      "Teamwork",
       "Knowledge Sharing",
-      "Adaptability",
+      "Mentorship",
+      "Remote Collaboration",
+      "Teamwork",
       "Problem-Solving"
     ]
   },
@@ -101,8 +101,8 @@ const skillCategories = [
     title: "Languages",
     accent: "burnt-copper",
     skills:[
+      "Bahasa Indonesia (Native Proficiency)",
       "English (Professional Working Proficiency)",
-      "Bahasa Indonesia (Native Proficiency)"
     ]
 
   }
