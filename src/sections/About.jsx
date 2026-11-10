@@ -20,11 +20,8 @@ function About() {
           reliable software.
         </p>
 
-        <p>
-          During my tenure, I also took on QA lead responsibilities during internal
-          playtesting and client launches, coordinating an eight-person
-          team, mentoring and onboarding teammates, and turning testing findings into clear reports, 
-          and turning testing findings into clear reports.
+        <p>I have also worked with international teams across 
+          <strong> Europe, the Middle East, and the United States</strong>, adapting to remote and cross-cultural communication, and distributed working environments.
         </p>
 
         <p>

@@ -18,7 +18,7 @@ const skillCategories = [
   {
     number: "02",
     title: "Tools and Platforms",
-    accent: "blue",
+    accent: "muted-rose",
     skills: [
       "Fiddler",
       "Postman",
@@ -75,12 +75,37 @@ const skillCategories = [
   {
     number: "07",
     title: "Platform Experience",
-    accent: "overcast-blue",
+    accent: "antique-gold",
     skills: [
       "Web Applications",
       "Mobile Applications",
     ],
   },
+  {
+    number: "08",
+    title: "Professional Strengths",
+    accent: "soft-lavender",
+    skills: [
+      "Remote Collaboration",
+      "Cross-team Collaboration",
+      "Client Communication",
+      "Mentorship",
+      "Teamwork",
+      "Knowledge Sharing",
+      "Adaptability",
+      "Problem-Solving"
+    ]
+  },
+  {
+    number: "09",
+    title: "Languages",
+    accent: "burnt-copper",
+    skills:[
+      "English (Professional Working Proficiency)",
+      "Bahasa Indonesia (Native Proficiency)"
+    ]
+
+  }
 ];
 
 const learningSkills = ["Playwright", "Python", "Pytest", "GitHub Actions"];

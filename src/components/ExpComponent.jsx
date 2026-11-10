@@ -3,7 +3,8 @@ const companies = [
     name: "Brankas Pte. Ltd.",
     description: "B2B Open Finance and Banking Solutions",
     period: "December 2025 – June 2026",
-    details: ["7 months", "Contract", "Remote"],
+    tenure: "6 Months",
+    details: ["Contract", "Remote"],
     roles: [
       {
         accent: "official",
@@ -40,13 +41,13 @@ const companies = [
     name: "PT. Accelbyte Teknologi Indonesia",
     description: "B2B Gaming Backend and Ecosystem Platform",
     period: "November 2021 – April 2025",
-    details: ["3 years 6 months", "Full Time", "Remote"],
+    tenure: "3 years 5 months",
+    details: ["Full Time", "Remote"],
     roles: [
       {
         accent: "official",
         type: "OFFICIAL POSITION",
         title: "Quality Assurance Specialist",
-        period: "November 2021 – April 2025 · 3 years 6 months",
         bullets: [
           <>
             Executed testing across{" "}
@@ -78,7 +79,7 @@ const companies = [
         accent: "lead",
         type: "ADDITIONAL RESPONSIBILITY",
         title: "Acting QA Lead - Internal Playtesting and War Room",
-        period: "June 2023 – April 2025 · 1 year 10 months",
+        period: "June 2023 – April 2025",
         bullets: [
           <>
             Coordinated an <strong>8-person QA team</strong> during internal
@@ -120,7 +121,8 @@ const companies = [
     name: "PT. Vodjo Teknologi Indonesia",
     description: "Software Ecosystem Company",
     period: "May 2021 – November 2021",
-    details: ["7 months", "Contract", "Remote"],
+    tenure: "6 months",
+    details: ["Contract", "Remote"],
     roles: [
       {
         accent: "official",
@@ -156,53 +158,67 @@ const companies = [
   },
 ];
 
+
+
 function ExpComponent() {
   return (
-    <>
+    <div className="experience-list">
       {companies.map((company) => (
-        <article className="experience-company" key={company.period}>
-          <div className="company-heading">
-            <div>
-              <h3>{company.name}</h3>
-              <p className="company-description">{company.description}</p>
-            </div>
+        <article className="experience-entry" key={company.name}>
 
-            <div className="company-period">
-              <span>{company.period}</span>
-              {company.details.map((detail) => (
-                <small key={detail}>{detail}</small>
-              ))}
-            </div>
+          {/* Company employment period */}
+          <div className="experience-date">
+            <p className="experience-period">
+              {company.period}
+            </p>
+
+            <p className="experience-tenure">
+              {company.tenure}
+            </p>
           </div>
 
-          <div className="experience-timeline">
-            {company.roles.map((role, index) => (
-              <div
-                className={`timeline-item role-${role.accent}`}
-                key={role.title}
-              >
-                <div className="timeline-marker">
-                  <span
-                    className={
-                      index === 0
-                        ? "timeline-dot timeline-dot-current"
-                        : "timeline-dot"
-                    }
-                  />
-                  {index < company.roles.length - 1 && (
-                    <span className="timeline-line" />
-                  )}
-                </div>
+          {/* Timeline marker */}
+          <div className="experience-track">
+            <span className="experience-dot" />
+          </div>
 
-                <div className="timeline-content">
+          {/* Company information */}
+          <div className="experience-card">
+
+            <div className="company-heading">
+              <h3>{company.name}</h3>
+
+              <p className="company-description">
+                {company.description}
+              </p>
+
+              <div className="company-details">
+                {company.details.map((detail, index) => (
+                  <span
+                    className="company-detail-badge"
+                    key={`${company.name}-${index}`}
+                  >
+                    {detail}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Roles within the company */}
+            <div className="company-roles">
+              {company.roles.map((role, index) => (
+                <div className="experience-role" key={role.title}>
+
                   <div className="role-heading">
-                    <div>
-                      <p className="role-type">{role.type}</p>
-                      <h4>{role.title}</h4>
-                      {role.period && (
-                        <p className="role-period">{role.period}</p>
-                      )}
-                    </div>
+                    <p className="role-type">
+                      {role.type}
+                    </p>
+
+                    <h4>{role.title}</h4>
+
+                    <p className="role-period">
+                      {role.period}
+                    </p>
                   </div>
 
                   <ul className="responsibility-list">
@@ -211,28 +227,34 @@ function ExpComponent() {
                     ))}
                   </ul>
 
-                  {role.achievements && (
+                  {role.achievements?.length > 0 && (
                     <div className="achievements">
-                      <p className="achievements-label">KEY ACHIEVEMENTS</p>
+                      <p className="achievements-label">
+                        KEY ACHIEVEMENTS
+                      </p>
 
-                      {role.achievements.map((achievement) => (
-                        <div
-                          className="achievement-item"
-                          key={achievement.title}
-                        >
-                          <h5>{achievement.title}</h5>
-                          <p>{achievement.text}</p>
-                        </div>
-                      ))}
+                      <div className="achievement-list">
+                        {role.achievements.map((achievement) => (
+                          <div
+                            className="achievement-item"
+                            key={achievement.title}
+                          >
+                            <h5>{achievement.title}</h5>
+                            <p>{achievement.text}</p>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   )}
+
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
+
           </div>
         </article>
       ))}
-    </>
+    </div>
   );
 }
 
