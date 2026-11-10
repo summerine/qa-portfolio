@@ -7,7 +7,7 @@ function About() {
         <h2>About Me</h2>
 
         <p>
-          I am a Quality Assurance Engineer with 4.5 years of
+          I am a QA Engineer with 4.5 years of
           experience in fintech (open finance) and gaming backend
           products.
         </p>

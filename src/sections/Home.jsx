@@ -2,7 +2,7 @@ function Home() {
   return (
     <section id="home" className="hero">
       <div className="hero-content">
-          <p className="hero-label">QUALITY ASSURANCE PROFESSIONAL</p>
+          <p className="hero-label">QUALITY ASSURANCE ENGINEER</p>
 
       <div className="hero-name-group">
         <h1 className="hero-name">Hello, I am Indri Puspita Rini</h1>

@@ -1,3 +1,6 @@
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+
 function Contact() {
   return (
     <section id="contact" className="contact-section">
@@ -7,7 +10,8 @@ function Contact() {
           <p className="section-label">GET IN TOUCH</p>
           <h2>Contact</h2>
           <p>
-            I am open to QA opportunities and professional conversations with recruiters, teams, and fellow practitioners who value collaboration, and software quality.
+            I am open to QA opportunities and professional conversations with recruiters, 
+            teams, and fellow practitioners who value collaboration, and software quality.
           </p>
         </div>
 
@@ -19,7 +23,9 @@ function Contact() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="contact-link-icon">in</div>
+            <div className="contact-link-icon">
+                <FaLinkedin size={32} color="#0A66C2" />
+            </div>
 
             <div className="contact-link-content">
               <h3>LinkedIn</h3>
@@ -37,7 +43,11 @@ function Contact() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="contact-link-icon">GH</div>
+          
+        <div className="contact-link-icon">
+           <FaGithub size={32} color="#181717" />
+        </div>
+
 
             <div className="contact-link-content">
               <h3>GitHub</h3>
