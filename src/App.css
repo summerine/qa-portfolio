@@ -742,7 +742,7 @@ a:focus-visible {
    7. RESPONSIVE LAYOUT
 ================================= */
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
   /* Navigation */
 
@@ -794,6 +794,19 @@ a:focus-visible {
 
   /* Experience */
 
+  .experience-entry {
+    grid-template-columns: 180px 20px minmax(0, 1fr);
+    column-gap: 10px;
+  }
+
+  .experience-card {
+    padding: 25px 24px;
+  }
+
+  .experience-date{
+    text-align: left;
+  }
+
   .experience {
     padding: 72px 24px;
   }
@@ -808,7 +821,61 @@ a:focus-visible {
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
+
+  .experience-list {
+    gap: 30px;
+  }
+
+  .experience-entry {
+    grid-template-columns: 16px minmax(0, 1fr);
+    column-gap: 12px;
+  }
+
+    .experience-date {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 0 0 12px;
+    text-align: left;
+  }
+
+  .experience-period {
+    white-space: normal;
+  }
+
+  .experience-track {
+    grid-column: 1;
+    grid-row: 1 / 3;
+  }
+
+  .experience-track::before {
+    bottom: -30px;
+  }
+
+  .experience-dot {
+    margin-top: 3px;
+  }
+
+  .experience-card {
+    grid-column: 2;
+    grid-row: 2;
+    min-width: 0;
+    padding: 22px 18px;
+    border-radius: 12px;
+  }
+
+    .company-heading h3 {
+    font-size: 19px;
+    overflow-wrap: anywhere;
+  }
+
+  .role-heading h4 {
+    font-size: 17px;
+  }
+
+  .responsibility-list li {
+    font-size: 13px;
+  }
 
   .nav-list {
     gap: 14px;
@@ -832,6 +899,23 @@ a:focus-visible {
     text-align: center;
   }
 }
+
+/* Small mobile */
+@media (max-width: 380px) {
+  .experience-entry {
+    column-gap: 9px;
+  }
+
+  .experience-card {
+    padding: 18px 14px;
+  }
+
+  .company-detail-badge {
+    font-size: 10px;
+    padding: 5px 9px;
+  }
+}
+
 
 
 /* =========================
