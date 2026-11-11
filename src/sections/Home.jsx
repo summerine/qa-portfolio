@@ -13,14 +13,14 @@ function Home() {
           </span>
       </div>
 
-        <h2>
+        {/* <h2>
           Making Product Behaviour <span className="hero-highlight">Clear</span> Through
           Testing and Documentation.
-        </h2>
+        </h2> */}
 
         <p className="hero-description">
-          I help teams understand product behaviour, communicate testing
-          findings effectively, and make informed decisions, not just find bugs.
+          I turn testing findings into clear insights that help teams understand product quality, address risks, 
+          and make informed decisions throughout the development process.
         </p>
 
         <p className="hero-secondary">
