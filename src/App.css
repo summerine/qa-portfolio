@@ -1,30 +1,18 @@
 
+
 /* =================================
    1. NAVIGATION
 ================================= */
 
 .navbar {
   width: 100%;
-  padding: 32px 24px;
-  flex-direction: column;
-  gap: 22px;
-  border-bottom: 1px solid var(--border);
+  padding: 28px 24px;
   display: flex;
+  justify-content: center;
   align-items: center;
   position: relative;
-}
-
-.navbar-logo {
-  font-family: var(--font-heading);
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: 4px;
-  color: var(--text-primary);
-  transition: color 0.3s ease;
-}
-
-.navbar-logo:hover {
-  color: var(--accent-light);
+  border-bottom: 1px solid var(--border);
+  z-index: 100;
 }
 
 .nav-list {
@@ -35,6 +23,8 @@
   gap: 32px;
   list-style: none;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-list a {
@@ -42,12 +32,110 @@
   color: var(--text-secondary);
   font-size: 13px;
   letter-spacing: 1.5px;
+  text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .nav-list a:hover {
   color: var(--accent-light);
 }
+
+/* HAMBURGER BUTTON */
+
+.menu-toggle {
+  display: none;
+  width: 40px;
+  height: 40px;
+  padding: 9px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 19px;
+  height: 2px;
+  background: var(--text-primary);
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+/* HAMBURGER ANIMATION */
+
+.menu-toggle.active span:first-child {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:last-child {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* KEYBOARD FOCUS */
+
+.menu-toggle:focus-visible,
+.nav-list a:focus-visible {
+  outline: 2px solid var(--accent-light);
+  outline-offset: 4px;
+}
+
+/* =================================
+   RESPONSIVE NAVIGATION
+================================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    justify-content: flex-end;
+    padding: 16px 24px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 12px 24px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-list.is-open {
+    display: flex;
+  }
+
+  .nav-list li {
+    width: 100%;
+  }
+
+  .nav-list a {
+    display: block;
+    padding: 15px 8px;
+    font-size: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-list li:last-child a {
+    border-bottom: none;
+  }
+}
+
 
 
 /* =================================
