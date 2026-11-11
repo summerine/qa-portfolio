@@ -265,6 +265,38 @@ a:focus-visible {
   outline-offset: 3px;
 }
 
+/* LIGHT THEME BUTTONS */
+
+[data-theme="light"] .button-primary {
+  background: #665675;
+  border-color: #665675;
+  color: #FFFFFF;
+}
+
+[data-theme="light"] .button-primary:hover {
+  background: #564564;
+  border-color: #564564;
+}
+
+[data-theme="light"] .button-secondary {
+  background: transparent;
+  border-color: #665675;
+  color: #51435E;
+}
+
+[data-theme="light"] .button-secondary:hover {
+  background: rgba(102, 86, 117, 0.10);
+}
+
+[data-theme="light"] .button-tertiary {
+  background: #E1E2DA;
+  border-color: #A9AEA5;
+  color: #303238;
+}
+
+[data-theme="light"] .button-tertiary:hover {
+  background: #C4C9BF;
+}
 
 /* =================================
    4. SHARED SECTION LABEL
@@ -1740,6 +1772,23 @@ a:focus-visible {
   background: #78C795;
   flex-shrink: 0;
 }
+
+
+[data-theme="light"]{
+--text-primary: #25231F;
+--text-secondary: #514D46;
+}
+
+[data-theme="light"] .open-to-work {
+  background: #DC35DC;
+  border-color: #456B52;
+  color: #345B48;
+}
+
+[data-theme="light"] .open-to-work-dot {
+  background: #456B52;
+}
+
 
 @media (max-width: 650px) {
   .hero-name-group {

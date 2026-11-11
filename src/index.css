@@ -3,7 +3,15 @@
    1. DESIGN TOKENS
 ================================= */
 
-:root {
+
+/* =================================
+   1. DESIGN TOKENS
+================================= */
+
+/* DARK THEME — JIGOKU SHOUJO */
+
+:root,
+[data-theme="dark"] {
   /* Backgrounds */
   --background: #0A0A0C;
   --surface: #121215;
@@ -33,6 +41,38 @@
   /* Typography */
   --font-body: 'Inter', sans-serif;
 }
+
+/* LIGHT THEME — xxxHOLiC INSPIRED */
+
+[data-theme="light"] {
+  --background: #D2D5CD;
+  --surface: #C4C9BF;
+  --surface-hover: #B7BDB2;
+
+  --text-primary: #303238;
+  --text-secondary: #50545A;
+
+  --border: #A9AEA5;
+
+  --accent: #756783;
+  --accent-light: #756783;
+  --accent-muted: #C4C9BF;
+
+  --accent-warm: #B77D91;
+  --accent-green: #668779;
+  --accent-indigo: #536D83;
+
+  /* Text */
+  --text-primary: #282724;
+  --text-secondary: #77736B;
+
+  /* Borders */
+  --border: #BEB9AE;
+
+  /* Typography */
+  --font-body: 'Inter', sans-serif;
+}
+
 
 /* =================================
    2. RESET
@@ -65,6 +105,21 @@ body {
   font-size: 16px;
   line-height: 1.7;
   font-weight: 400;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+
+}
+
+[data-theme="light"] body {
+  background:
+    radial-gradient(
+      ellipse at 15% 15%,
+      rgba(165, 44, 50, 0.07),
+      transparent 45%
+    ),
+    var(--background);
 }
 
 /* =================================
