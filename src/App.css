@@ -1,76 +1,3 @@
-/* =================================
-   TOGGLE THEME
-================================= */
-
-
-.theme-toggle {
-  width: 38px;
-  height: 38px;
-  padding: 0;
-  margin: 0;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  cursor: pointer;
-  background: transparent;
-  border: 1px solid var(--border);
-  border-radius: 50%;
-
-  color: var(--text-primary);
-  font-size: 20px;
-  line-height: 1;
-
-  transition: all 0.3s ease;
-}
-
-
-.theme-toggle:hover {
-  background: var(--surface);
-  color: var(--accent-light);
-}
-
-.theme-toggle-item{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 8px;
-  align-self: center;
-}
-
-
-@media (max-width: 768px) {
-  .nav-list {
-    gap: 20px;
-  }
-
-  .theme-toggle-item {
-    margin-left: 4px;
-  }
-
-  .theme-toggle {
-    width: 34px;
-    height: 34px;
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 480px) {
-  .nav-list {
-    gap: 14px;
-  }
-
-  .nav-list a {
-    font-size: 11px;
-  }
-
-  .theme-toggle {
-    width: 32px;
-    height: 32px;
-    font-size: 17px;
-  }
-}
 
 /* =================================
    1. NAVIGATION
@@ -79,9 +6,7 @@
 .navbar {
   width: 100%;
   padding: 32px 24px;
-  display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 22px;
   border-bottom: 1px solid var(--border);
   display: flex;
@@ -129,14 +54,6 @@
    2. HOME / HERO SECTION
 ================================= */
 
-.hero-label::before {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 48px;
-  margin: 0 auto 24px;
-  background: var(--accent-light);
-}
 
 .hero {
   min-height: 75vh;
@@ -149,56 +66,89 @@
   border-bottom: 1px solid var(--border);
 }
 
-.hero-name {
-  font-family: var(--font-heading);
-  font-size: clamp(44px, 5.5vw, 56px);
-  font-weight: 500;
-  margin-bottom: 20px;
-}
-
 .hero-content {
   width: 100%;
-  max-width: 950px;
+  max-width: 900px;
 }
 
 .hero-label {
   color: var(--accent-warm);
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 3px;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
-.hero h2 {
-  font-size: clamp(22px, 2.5vw, 26px);
+.hero-label::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 42px;
+  margin: 0 auto 20px;
+  background: var(--accent-light);
+}
+
+.hero-name-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.hero-greeting {
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+  font-size: 16px;
   font-weight: 400;
-  line-height: 1.3;
-  margin-bottom: 24px;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.hero-name {
+  font-family: var(--font-heading);
+  font-size: clamp(38px, 5vw, 52px);
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.hero-headline {
+  font-family: var(--font-heading);
+  font-size: clamp(27px, 3.2vw, 36px);
+  font-weight: 500;
+  line-height: 1.45;
+  margin: 0 auto 24px;
+  max-width: 780px;
 }
 
 .hero-highlight {
-  color: var(--accent-warm);
+  color: var(--accent-light);
 }
 
 .hero-description {
   max-width: 650px;
-  margin: 0 auto 24px;
+  margin: 0 auto 28px;
   color: var(--text-secondary);
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.8;
 }
 
 .hero-secondary {
-  color: var(--accent-warm);
-  font-size: 13px;
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
   letter-spacing: 1.5px;
-  margin-bottom: 36px;
+  line-height: 1.8;
+  margin: 0 auto 38px;
 }
 
 .hero-secondary strong {
-  color: var(--accent-warm);
+  color: var(--text-secondary);
   font-weight: 500;
+
 }
 
 .hero-actions {
@@ -206,50 +156,8 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 14px;
 }
-
-
-/* =================================
-   LIGHT THEME — HERO BUTTONS
-================================= */
-
-[data-theme="light"] .button-primary {
-  background: #A8182E;
-  border: 1px solid #A8182E;
-  color: #FFFFFF;
-}
-
-[data-theme="light"] .button-primary:hover {
-  background: #741020;
-  border-color: #741020;
-  color: #FFFFFF;
-}
-
-[data-theme="light"] .button-secondary {
-  background: transparent;
-  border: 1px solid #A8182E;
-  color: #A8182E;
-}
-
-[data-theme="light"] .button-secondary:hover {
-  background: rgba(168, 24, 46, 0.07);
-  border-color: #741020;
-  color: #741020;
-}
-
-[data-theme="light"] .button-tertiary {
-  background: #1C1B3A;
-  border: 1px solid #1C1B3A;
-  color: #F1E8DA;
-}
-
-[data-theme="light"] .button-tertiary:hover {
-  background: #303052;
-  border-color: #303052;
-  color: #FFFFFF;
-}
-
 
 /* =================================
    3. BUTTONS
@@ -258,13 +166,18 @@
 .button-primary,
 .button-secondary,
 .button-tertiary {
-  display: inline-block;
-  padding: 13px 26px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 46px;
+  padding: 12px 24px;
   font-family: var(--font-body);
-  font-size: 14px;
-  font-weight: 500;
-  border-radius: 6px;
-  transition: all 0.3s ease;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.25s ease;
 }
 
 .button-primary {
@@ -276,28 +189,53 @@
 .button-primary:hover {
   background: var(--accent-light);
   border-color: var(--accent-light);
+  transform: translateY(-2px);
 }
 
 .button-secondary {
-  background: var(--accent-muted);
-  border: 1px solid var(--border);
-  color: #FFFFFF;
-}
-
-.button-secondary:hover {
-  border-color: var(--accent-light);
-  color: var(--accent-light);
-}
-
-.button-tertiary {
   background: transparent;
   border: 1px solid var(--border);
   color: var(--text-primary);
 }
 
-.button-tertiary:hover {
-  border-color: var(--accent);
+.button-secondary:hover {
+  border-color: var(--accent-light);
   color: var(--accent-light);
+  transform: translateY(-2px);
+}
+
+.button-primary {
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  color: #FFFFFF;
+}
+
+.button-secondary {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+}
+
+.button-tertiary {
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text-secondary);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.button-tertiary::after {
+  content: "→";
+  margin-left: 9px;
+  transition: transform 0.25s ease;
+}
+
+.button-tertiary:hover {
+  color: var(--accent-light);
+}
+
+.button-tertiary:hover::after {
+  transform: translateX(4px);
 }
 
 /* Visible outline when navigating with the keyboard */
@@ -306,38 +244,6 @@ a:focus-visible {
   outline-offset: 3px;
 }
 
-/* LIGHT THEME BUTTONS */
-
-[data-theme="light"] .button-primary {
-  background: #665675;
-  border-color: #665675;
-  color: #FFFFFF;
-}
-
-[data-theme="light"] .button-primary:hover {
-  background: #564564;
-  border-color: #564564;
-}
-
-[data-theme="light"] .button-secondary {
-  background: transparent;
-  border-color: #665675;
-  color: #51435E;
-}
-
-[data-theme="light"] .button-secondary:hover {
-  background: rgba(102, 86, 117, 0.10);
-}
-
-[data-theme="light"] .button-tertiary {
-  background: #E1E2DA;
-  border-color: #A9AEA5;
-  color: #303238;
-}
-
-[data-theme="light"] .button-tertiary:hover {
-  background: #C4C9BF;
-}
 
 /* =================================
    4. SHARED SECTION LABEL
@@ -1049,6 +955,10 @@ a:focus-visible {
   font-size: 14px;
 }
 
+
+
+
+
 /* Responsive layout */
 @media (max-width: 650px) {
   .skills-section {
@@ -1077,7 +987,7 @@ a:focus-visible {
 
 .experience-section {
   padding: 100px 24px;
-  border-bottom: 1px solid rgba(78, 82, 91, 0.5);
+  border-bottom: 1px solid var(--border);
 }
 
 .experience-container {
@@ -1263,7 +1173,7 @@ a:focus-visible {
 }
 
 .achievements {
-  border-top: 1px solid rgba(78, 82, 91, 0.6);
+  border-top: 1px solid var(--border);
   padding-top: 22px;
 }
 
@@ -1347,7 +1257,7 @@ a:focus-visible {
 
 .projects-section {
   padding: 100px 24px;
-  border-bottom: 1px solid rgba(78, 82, 91, 0.5);
+  border-bottom: 1px solid var(--border);
 }
 
 .experience-section,
@@ -1453,12 +1363,6 @@ a:focus-visible {
   color: var(--accent-amber);
 }
 
-[data-theme="light"] .status-in-progress {
-  background: #DCE3E9;
-  border-color: #8798AA;
-  color: #34485D;
-}
-
 .status-completed {
   border-color: var(--accent-green);
   color: #83B69A;
@@ -1473,6 +1377,9 @@ a:focus-visible {
   border-color: var(--accent-indigo);
   color: #8FA8D8;
 }
+
+
+
 
 /* Card Content */
 
@@ -1506,7 +1413,7 @@ a:focus-visible {
 
 .project-tag {
   padding: 6px 9px;
-  border: 1px solid rgba(78, 82, 91, 0.7);
+  border: 1px solid var(--border);
   color: var(--text-secondary);
   font-size: 11px;
   line-height: 1.3;
@@ -1516,7 +1423,7 @@ a:focus-visible {
 
 .project-card-footer {
   padding-top: 18px;
-  border-top: 1px solid rgba(78, 82, 91, 0.5);
+  border-top: 1px solid var(--border);
 }
 
 .project-link {
@@ -1570,7 +1477,7 @@ a:focus-visible {
 
 .contact-section {
   padding: 80px 24px;
-  border-bottom: 1px solid rgba(78, 82, 91, 0.5);
+  border-bottom: 1px solid var(--border);
 }
 
 .contact-container {
@@ -1796,7 +1703,6 @@ a:focus-visible {
 
 .open-to-work {
   position: static;
-  left: calc(50% + 200px);
   display: inline-flex;
   align-items: center;
   gap: 7px;
@@ -1821,19 +1727,7 @@ a:focus-visible {
 }
 
 
-/* =================================
-   LIGHT THEME — OPEN TO WORK
-================================= */
 
-[data-theme="light"] .open-to-work {
-  background: #1C1B3A;
-  border-color: #1C1B3A;
-  color: #F1E8DA;
-}
-
-[data-theme="light"] .open-to-work-dot {
-  background: #8DB89A;
-}
 
 
 @media (max-width: 650px) {

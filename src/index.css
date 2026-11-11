@@ -8,7 +8,7 @@
    1. DESIGN TOKENS
 ================================= */
 
-/* DARK THEME — JIGOKU SHOUJO */
+/* DARK THEME */
 
 :root,
 [data-theme="dark"] {
@@ -42,111 +42,7 @@
   --font-body: 'Inter', sans-serif;
 }
 
-/* LIGHT THEME — xxxHOLiC INSPIRED */
 
-[data-theme="light"] {
-  --background: #F1E8DA;
-  --surface: #FBF7F0;
-  --surface-hover: #E8DECF;
-
-  --text-primary: #1B1721;
-  --text-secondary: #4A5B72;
-  --text-muted: #7B7684;
-
-  --border: #DCCFBC;
-
-  --accent: #A8182E;
-  --accent-light: #A8182E;
-  --accent-muted: #741020;
-
-  --accent-indigo: #1C1B3A;
-  --accent-purple: #5E3A8C;
-
-  /* Text */
-  --text-primary: #282724;
-  --text-secondary: #77736B;
-
-  /* Borders */
-  --border: #BEB9AE;
-
-  /* Typography */
-  --font-body: 'Inter', sans-serif;
-}
-
-[data-theme="light"] body {
-  background: var(--background);
-  color: var(--text-primary);
-}
-
-[data-theme="light"] h1,
-[data-theme="light"] h2,
-[data-theme="light"] h3 {
-  color: var(--text-secondary);
-}
-
-[data-theme="light"] p {
-  color: var(--text-primary);
-}
-
-[data-theme="light"] ::selection {
-  background: var(--accent);
-  color: #FFFFFF;
-}
-[data-theme="light"] .open-to-work {
-  background: #1C1B3A;
-  border-color: #1C1B3A;
-  color: #F1E8DA;
-}
-
-[data-theme="light"] .open-to-work-dot {
-  background: #8DB89A;
-}
-
-/* Primary button */
-[data-theme="light"] .button-primary {
-  background: #A8182E;
-  border: 1px solid #A8182E;
-  color: #FFFFFF;
-}
-
-[data-theme="light"] .button-primary:hover {
-  background: #741020;
-  border-color: #741020;
-  color: #FFFFFF;
-}
-
-/* Secondary button */
-[data-theme="light"] .button-secondary {
-  background: transparent;
-  border: 1px solid #A8182E;
-  color: #A8182E;
-}
-
-[data-theme="light"] .button-secondary:hover {
-  background: rgba(168, 24, 46, 0.07);
-  border-color: #741020;
-  color: #741020;
-}
-
-/* Tertiary button */
-[data-theme="light"] .button-tertiary {
-  background: #1C1B3A;
-  border: 1px solid #1C1B3A;
-  color: #F1E8DA;
-}
-
-[data-theme="light"] .button-tertiary:hover {
-  background: #303052;
-  border-color: #303052;
-  color: #FFFFFF;
-}
-
-[data-theme="light"] .card,
-[data-theme="light"] .project-card,
-[data-theme="light"] .skill-card {
-  background: var(--surface);
-  border-color: var(--border);
-}
 
 /* =================================
    2. RESET
@@ -184,16 +80,6 @@ body {
     background-color 0.3s ease,
     color 0.3s ease;
 
-}
-
-[data-theme="light"] body {
-  background:
-    radial-gradient(
-      ellipse at 15% 15%,
-      rgba(165, 44, 50, 0.07),
-      transparent 45%
-    ),
-    var(--background);
 }
 
 /* =================================
