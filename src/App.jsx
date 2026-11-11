@@ -8,11 +8,29 @@ import Projects from './sections/Projects.jsx'
 import Contact from './sections/Contact.jsx'
 import ScrollButtons from './ScrollButtons.jsx'
 import Footer from './sections/Footer.jsx'
+import {useState, useEffect} from 'react'
 
 function App() {
+  const [theme, setTheme] = useState(() => {
+    const savedTheme = localStorage.getItem('theme')
+    return savedTheme === 'light' ? 'light' : 'dark'
+  })
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme)
+    localStorage.setItem('theme', theme)
+  }, [theme])
+
+  const toggleTheme = () => {
+    setTheme(currentTheme =>
+      currentTheme === 'dark' ? 'light' : 'dark'
+    )
+  }
+
   return (
     <>
-      <Navbar />
+      <Navbar theme={theme} onToggleTheme={toggleTheme} />
+
       <main>
         <Home />
         <About />
@@ -21,7 +39,6 @@ function App() {
         <Projects />
         <Contact />
         <Footer />
-
 
         <ScrollButtons />
       </main>
