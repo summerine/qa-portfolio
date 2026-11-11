@@ -160,11 +160,11 @@
 }
 
 .hero-label {
-  color: var(--accent-warm);
+  color: var(--accent-light);
   font-family: var(--font-body);
   font-size: 12px;
   font-weight: 600;
-  letter-spacing: 3px;
+  letter-spacing: 1.8px;
   margin-bottom: 28px;
 }
 
@@ -186,7 +186,7 @@
 }
 
 .hero-greeting {
-  color: var(--text-secondary);
+  color: #B0B0B8;
   font-family: var(--font-body);
   font-size: 16px;
   font-weight: 400;
@@ -224,7 +224,7 @@
 }
 
 .hero-secondary {
-  color: var(--text-secondary);
+  color: #A8A8B0;
   font-family: var(--font-body);
   font-size: 11px;
   font-weight: 500;

@@ -123,8 +123,8 @@ function SkillsComponent() {
           <h2>Skills &amp; Expertise</h2>
 
           <p className="skills-intro">
-            A record of technical capabilities, testing practices,
-            tools and domain experience.
+            A record of both soft and technical capabilities, tools,
+            and domain experiences.
           </p>
         </div>
 
