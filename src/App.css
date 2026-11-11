@@ -211,6 +211,47 @@
 
 
 /* =================================
+   LIGHT THEME — HERO BUTTONS
+================================= */
+
+[data-theme="light"] .button-primary {
+  background: #A8182E;
+  border: 1px solid #A8182E;
+  color: #FFFFFF;
+}
+
+[data-theme="light"] .button-primary:hover {
+  background: #741020;
+  border-color: #741020;
+  color: #FFFFFF;
+}
+
+[data-theme="light"] .button-secondary {
+  background: transparent;
+  border: 1px solid #A8182E;
+  color: #A8182E;
+}
+
+[data-theme="light"] .button-secondary:hover {
+  background: rgba(168, 24, 46, 0.07);
+  border-color: #741020;
+  color: #741020;
+}
+
+[data-theme="light"] .button-tertiary {
+  background: #1C1B3A;
+  border: 1px solid #1C1B3A;
+  color: #F1E8DA;
+}
+
+[data-theme="light"] .button-tertiary:hover {
+  background: #303052;
+  border-color: #303052;
+  color: #FFFFFF;
+}
+
+
+/* =================================
    3. BUTTONS
 ================================= */
 
@@ -1412,6 +1453,12 @@ a:focus-visible {
   color: var(--accent-amber);
 }
 
+[data-theme="light"] .status-in-progress {
+  background: #DCE3E9;
+  border-color: #8798AA;
+  color: #34485D;
+}
+
 .status-completed {
   border-color: var(--accent-green);
   color: #83B69A;
@@ -1774,19 +1821,18 @@ a:focus-visible {
 }
 
 
-[data-theme="light"]{
---text-primary: #25231F;
---text-secondary: #514D46;
-}
+/* =================================
+   LIGHT THEME — OPEN TO WORK
+================================= */
 
 [data-theme="light"] .open-to-work {
-  background: #DC35DC;
-  border-color: #456B52;
-  color: #345B48;
+  background: #1C1B3A;
+  border-color: #1C1B3A;
+  color: #F1E8DA;
 }
 
 [data-theme="light"] .open-to-work-dot {
-  background: #456B52;
+  background: #8DB89A;
 }
 
 
