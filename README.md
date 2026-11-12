@@ -1,16 +1,23 @@
-# React + Vite
+# QA Engineer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio showcasing my professional experience, soft and technical skills, and projects as a Quality Assurance Engineer.
 
-Currently, two official plugins are available:
+## About Me
+I am a Quality Assurance Engineer with **4.5 years of experience** across fintech (open finance) and gaming backend services.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+My experience includes manual testing, API testing, test case design, defect investigation, test reporting, and QA documentation. I focus on translating testing findings into clear insights that help teams understand product quality, identify risks, and make informed decisions.
 
-## React Compiler
+I have experience collaborating with developers, product managers, and stakeholders across international teams.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Currently, I am developing my test automation skills through ** Playwright, Python, and Pytest. **
 
-## Expanding the ESLint configuration
+## Projects
+Explore my portfolio for personal projects, testing exercises, and ongoing learning intiatives.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Contact
+- **GitHub:** [summerine](https://github.com/summerine)
+- **LinkedIn:** [Indri Puspita Rini](https://www.linkedin.com/in/indri-p-bb6a96152/)
+
+---
+
+© 2026 Indri Puspita Rini. Some rights reserved.
