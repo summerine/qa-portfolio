@@ -1,5 +1,7 @@
 # QA Engineer Portfolio
 
+**Portofolio:** [Indri's Website](https://summerine.github.io)
+
 A personal portfolio showcasing my professional experience, soft and technical skills, and projects as a Quality Assurance Engineer.
 
 ## About Me
@@ -15,7 +17,6 @@ Currently, I am developing my test automation skills through **Playwright, Pytho
 Explore my portfolio for personal projects, testing exercises, and ongoing learning intiatives.
 
 ## Contact
-- **GitHub:** [summerine](https://github.com/summerine)
 - **LinkedIn:** [Indri Puspita Rini](https://www.linkedin.com/in/indri-p-bb6a96152/)
 
 ---
