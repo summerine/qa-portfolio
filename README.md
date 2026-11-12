@@ -9,7 +9,7 @@ My experience includes manual testing, API testing, test case design, defect inv
 
 I have experience collaborating with developers, product managers, and stakeholders across international teams.
 
-Currently, I am developing my test automation skills through ** Playwright, Python, and Pytest. **
+Currently, I am developing my test automation skills through **Playwright, Python, and Pytest.**
 
 ## Projects
 Explore my portfolio for personal projects, testing exercises, and ongoing learning intiatives.
